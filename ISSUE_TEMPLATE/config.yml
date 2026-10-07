@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help with a game
+    url: https://chaosmos.studio/support/
+    about: Answers to common questions, and a way to report a bug, for each game.
+  - name: Ideas, solves and questions
+    url: https://www.reddit.com/r/chaosmos_studios/
+    about: Talk with other players on r/chaosmos_studios.
+  - name: A security problem
+    url: https://github.com/chaosmos-studio/.github/blob/main/SECURITY.md
+    about: Report it privately by email, never in an issue.

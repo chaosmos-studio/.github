@@ -1,0 +1,44 @@
+name: Bug
+description: Something in a game or on a website doesn't work as it should.
+labels: [bug]
+body:
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Plumb
+        - Carillon
+        - Apsis
+        - chaosmos.studio
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: At the bottom of the game's Settings. For a website or the browser version, the browser and its version.
+      placeholder: Plumb 1.1.4
+  - type: input
+    id: device
+    attributes:
+      label: Phone or computer
+      placeholder: Pixel 7, Android 15
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: And what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to see it
+      description: The steps that lead to it, starting from opening the game. Name the level if it's in one.
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or a recording
+      description: Drag them in here.

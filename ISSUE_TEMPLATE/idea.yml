@@ -1,0 +1,27 @@
+name: Idea
+description: Something you'd like to see in a game.
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: where
+    attributes:
+      label: Which game
+      options:
+        - Plumb
+        - Carillon
+        - Apsis
+        - A new game
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What it would make better, or what moment in the game made you think of it.
