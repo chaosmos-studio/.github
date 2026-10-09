@@ -9,11 +9,11 @@
 
 ## Our games
 
-| Game | How it plays | Try it |
+| Game | How it plays | More |
 | --- | --- | --- |
-| **Plumb** | Tilt the board and every marble rolls at once. Get each one into the hole of its own colour. | [Play in your browser](https://chaosmos.studio/plumb/play/) |
-| **Carillon** | Tap a dot and its ring pops its neighbours. Every pop is a note, so every chain plays a tune. | [Play in your browser](https://chaosmos.studio/carillon/play/) |
-| **Apsis** | Arrows rest on orbits around a sun. Tap one and it flies straight out, if nothing is in its way. | [Play in your browser](https://chaosmos.studio/apsis/play/) |
+| **Plumb** | Tilt the board and every marble rolls at once. Get each one into the hole of its own colour. | [chaosmos.studio/plumb](https://chaosmos.studio/plumb/) |
+| **Carillon** | Tap a dot and its ring pops its neighbours. Every pop is a note, so every chain plays a tune. | [chaosmos.studio/carillon](https://chaosmos.studio/carillon/) |
+| **Apsis** | Arrows rest on orbits around a sun. Tap one and it flies straight out, if nothing is in its way. | [chaosmos.studio/apsis](https://chaosmos.studio/apsis/) |
 
 All three are coming soon to Google Play.
 
@@ -28,7 +28,7 @@ The games are built with Godot.
 
 - Website: [chaosmos.studio](https://chaosmos.studio)
 - Email: [hello@chaosmos.studio](mailto:hello@chaosmos.studio)
-- Community: [r/chaosmos_studios](https://www.reddit.com/r/chaosmos_studios/)
+- Community: [Discussions](https://github.com/chaosmos-studio/community/discussions) and [r/chaosmos_studios](https://www.reddit.com/r/chaosmos_studios/)
 - [YouTube](https://www.youtube.com/@chaosmos.studio), [Instagram](https://www.instagram.com/chaosmos.studio/), [Threads](https://www.threads.com/@chaosmos.studio) and [X](https://x.com/chaosmos_studio)
 
 ## Support the studio
