@@ -1,0 +1,33 @@
+name: Deploy a web build
+description: Serve built folders at chaosmos.studio/<path>/ from their own Cloudflare Worker.
+
+inputs:
+  worker:
+    description: The Worker's name, such as plumb-play.
+    required: true
+  paths:
+    description: One <path>=<folder> per line, such as plumb/play=build/web.
+    required: true
+  cloudflare-api-token:
+    description: A token that can edit Workers scripts in the Chaosmos Studio account, and read the chaosmos.studio zone and edit its Workers routes.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    # Wrangler needs Node 22.12 or later, newer than some runner images carry.
+    - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version: "24"
+        package-manager-cache: false
+
+    - name: Deploy to Cloudflare
+      shell: bash
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ inputs.cloudflare-api-token }}
+        WORKER: ${{ inputs.worker }}
+        PATHS: ${{ inputs.paths }}
+      run: |
+        set -euo pipefail
+        mapfile -t pairs < <(printf '%s\n' "$PATHS" | sed '/^[[:space:]]*$/d; s/^[[:space:]]*//; s/[[:space:]]*$//')
+        "$GITHUB_ACTION_PATH/deploy.sh" "$WORKER" "${pairs[@]}"
